@@ -1,6 +1,6 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const PRIVATE_KEY = "b4e68828fdcbfd06d805dc68ec24638bd4c973d1a6decf0553823131df864294"; // No '0x' prefix
+const PRIVATE_KEY = process.env.PRIVATE_KEY; // No '0x' prefix
 const RPC_URL = "https://mainnet.base.org"; // Official Base Mainnet RPC
 
 module.exports = {
