@@ -1,18 +1,18 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY; // No '0x' prefix
-const RPC_URL = "https://mainnet.base.org"; // Official Base Mainnet RPC
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const RPC_URL = "https://mainnet.base.org";
 
 module.exports = {
-  defaultNetwork: "base_mainnet",
+  defaultNetwork: "base_sepolia",
   networks: {
     hardhat: {
       chainId: 8453,
     },
-    base_mainnet: {
+    base_sepolia: {
       url: RPC_URL,
       accounts: [`0x${PRIVATE_KEY}`],
-      chainId: 8453,
+      chainId: 84532,
     },
   },
   solidity: {
@@ -25,3 +25,8 @@ module.exports = {
     },
   },
 };
+
+
+
+
+
